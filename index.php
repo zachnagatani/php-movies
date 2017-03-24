@@ -68,10 +68,8 @@
                 include('fresh_tomatoes.php');
 
                 foreach ($movies as $movie) {
-                    echo "<div class='col-md-6 col-lg-4 movie-tile text-center'>
-                            <a href='$movie->trailer_url' target='_blank'>
-                                <img src='$movie->poster' width='220' height='342'>
-                            </a>
+                    echo "<div class='col-md-6 col-lg-4 movie-tile text-center' data-trailer-youtube-id='$movie->yt_id' data-toggle='modal' data-target='#trailer'>
+                            <img src='$movie->poster' width='220' height='342'>
                             <h2>$movie->title</h2>
                             <p>$movie->storyline</p>
                           </div>";

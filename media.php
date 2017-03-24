@@ -3,13 +3,13 @@
         public $title;
         public $storyline;
         public $poster;
-        public $trailer_url;
+        public $yt_id;
 
-        public function __construct($title, $storyline, $poster, $trailer_url) {
+        public function __construct($title, $storyline, $poster, $yt_id) {
             $this->title = $title;
             $this->storyline = $storyline;
             $this->poster = $poster;
-            $this->trailer_url = $trailer_url;
+            $this->yt_id = $yt_id;
         }
     }
 ?>
